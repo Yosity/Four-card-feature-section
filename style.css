@@ -1,0 +1,114 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+
+header {
+    font-size: 13px;
+    min-width: 15rem;
+
+    margin: 0 10%;
+}
+h1 span {
+    font-weight: 100;
+    color: hsl(234, 12%, 34%);
+}
+
+main {
+    margin: 0 10%;
+    min-width: 15rem;
+}
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+@media (min-width:1000px) {
+    
+    header  {
+        margin: 0 31%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .main-paragraph-section{
+        margin: 0 26%;
+    }
+   
+}
+
+.cards-section {
+    display: grid;
+    grid-gap: 2rem ;
+
+    margin-top: 5rem;
+}
+.card {
+    text-align: start;
+    justify-self: center;
+    position: relative;
+    max-width: 20rem;
+    min-height: 14em;
+    padding: 0 8%;
+    border-top: 5px solid black;
+    border-radius: 7px;
+    box-shadow: 0 13px 15px -10px hsl(229, 6%, 66%); /*default color for *possible* extra cards*/
+}
+@media (min-width:1000px) {
+    .cards-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        
+        border: 1px solid black;
+    }
+    .card {
+        align-self: flex-start;
+    }
+    #card-1 {
+        align-self: center;
+    }
+    #card-3 {
+        align-self: center;
+    }
+    #card-4 {
+        grid-column-start: 2;
+    }
+    
+}
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.card p {
+    margin-top: 0;
+}
+.card img {
+    width: 60px;
+    position: absolute;
+    top: 65%;
+    right: 8%;
+}
+#card-1 {
+    border-color: hsl(180, 62%, 55%);
+    box-shadow: 0 13px 15px -10px hsl(180, 62%, 55%);
+}
+#card-2 {
+    border-color: hsl(0, 78%, 62%);
+    box-shadow: 0 13px 15px -10px hsl(0, 78%, 62%);
+}
+#card-3 {
+    border-color: hsl(34, 97%, 64%);
+    box-shadow: 0 13px 15px -10px hsl(34, 97%, 64%);
+
+} 
+#card-4 {
+    border-color: hsl(212, 86%, 64%);
+    box-shadow: 0 13px 15px -10px hsl(212, 86%, 64%);
+}
+
+.attribution {
+    display: none;
+}
